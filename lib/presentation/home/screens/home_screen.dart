@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:proyectoide/presentation/rutaAbajo/ruta_abajo_screen.dart';
 import 'package:proyectoide/presentation/rutaArriba/ruta_arriba_screen.dart';
+import 'package:proyectoide/presentation/shared/drawer_custom.dart';
 
 class HomeScreen extends StatelessWidget {
   const new ({super.key});
@@ -9,6 +10,7 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: DrawerCustom(),
       appBar: AppBar(
         title: Text("My Country"),
         backgroundColor: Colors.lightGreenAccent,
