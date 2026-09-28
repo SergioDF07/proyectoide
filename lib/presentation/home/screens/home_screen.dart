@@ -1,5 +1,5 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:proyectoide/presentation/peticiones/peticion_screen.dart';
 import 'package:proyectoide/presentation/rutaAbajo/ruta_abajo_screen.dart';
 import 'package:proyectoide/presentation/rutaArriba/ruta_arriba_screen.dart';
 import 'package:proyectoide/presentation/shared/drawer_custom.dart';
@@ -33,6 +33,15 @@ class HomeScreen extends StatelessWidget {
           trailing: Icon(Icons.arrow_forward),
           onTap: () {
             Navigator.push(context, MaterialPageRoute(builder: (context) => RutaAbajoScreen()));
+          },
+        ),
+
+        ListTile(
+          title: Text("Peticiones"),
+          subtitle: Text("peticiones wacho"),
+          trailing: Icon(Icons.arrow_forward),
+          onTap: () {
+            Navigator.push(context, MaterialPageRoute(builder: (context) => PeticionScreen()));
           },
         )
       ],
