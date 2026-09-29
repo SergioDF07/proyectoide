@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:proyectoide/presentation/infinito/infinito_screen.dart';
 import 'package:proyectoide/presentation/peticiones/peticion_screen.dart';
 import 'package:proyectoide/presentation/rutaAbajo/ruta_abajo_screen.dart';
 import 'package:proyectoide/presentation/rutaArriba/ruta_arriba_screen.dart';
@@ -42,6 +43,15 @@ class HomeScreen extends StatelessWidget {
           trailing: Icon(Icons.arrow_forward),
           onTap: () {
             Navigator.push(context, MaterialPageRoute(builder: (context) => PeticionScreen()));
+          },
+        ),
+
+        ListTile(
+          title: Text("infinito screen"),
+          subtitle: Text("This is a description about the page"),
+          leading: Icon(Icons.arrow_back),
+          onTap: () {
+            Navigator.push(context, MaterialPageRoute(builder: (context) => InfinitoScreen()));
           },
         )
       ],
