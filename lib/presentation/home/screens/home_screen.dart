@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:proyectoide/presentation/home/formulario/formulario_screen.dart';
 import 'package:proyectoide/presentation/home/pageView/page_view_screen.dart';
 import 'package:proyectoide/presentation/infinito/infinito_screen.dart';
 import 'package:proyectoide/presentation/peticiones/peticion_screen.dart';
@@ -62,6 +63,15 @@ class HomeScreen extends StatelessWidget {
           leading: Icon(Icons.arrow_back),
           onTap: () {
             Navigator.push(context, MaterialPageRoute(builder: (context) => PageViewScreen()));
+          },
+        ),
+
+        ListTile(
+          title: Text("Formulario Screen"),
+          subtitle: Text("Formu de los arios"),
+          trailing: Icon(Icons.arrow_forward),
+          onTap: () {
+            Navigator.push(context, MaterialPageRoute(builder: (context) => FormularioScreen()));
           },
         )
       ],
