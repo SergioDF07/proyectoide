@@ -63,7 +63,7 @@ class _FormularioScreenState extends State<FormularioScreen> {
 }
 
 class _FormCustom extends StatefulWidget {
-  const _FormCustom({super.key});
+  const _FormCustom();
 
   @override
   State<_FormCustom> createState() => _FormCustomState();
@@ -73,6 +73,10 @@ class _FormCustomState extends State<_FormCustom> {
 
   final _formController = GlobalKey<FormState>();
   String cellPhone = "";
+  String? music;
+  bool playGuitar = false;
+  bool playKeyboard = false;
+  bool playDrum = false;
   void send(){
     if(_formController.currentState!.validate()){
       print("Error");
@@ -121,6 +125,50 @@ class _FormCustomState extends State<_FormCustom> {
             }
 
             return null;
+          },
+        ),
+        RadioGroup<String>(
+          groupValue: music,
+          onChanged: (value) {
+            music = value;
+            setState(() {});
+          },
+          child: Column(
+            children: [
+              RadioListTile<String>(
+                title: Text("Music rock"),
+                value: "rock",
+              ),
+              RadioListTile<String>(
+                title: Text("Music pop"),
+                value: "pop",
+              ),
+            ],
+          ),
+        ),
+        Text("Seleccionar Skill"),
+        CheckboxListTile(
+          title: Text("Play guitar"),
+          value: playGuitar,
+          onChanged: (value) {
+            playGuitar = value ?? false;
+            setState(() {});
+          },
+        ),
+        CheckboxListTile(
+          title: Text("Play keyboard"),
+          value: playKeyboard,
+          onChanged: (value) {
+            playKeyboard = value ?? false;
+            setState(() {});
+          },
+        ),
+        CheckboxListTile(
+          title: Text("Play drum"),
+          value: playDrum,
+          onChanged: (value) {
+            playDrum = value ?? false;
+            setState(() {});
           },
         ),
         FilledButton(onPressed: send, child: Text("Send"))

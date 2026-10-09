@@ -7,7 +7,7 @@ const List<Widget> elementos = [
 ];
 
 class PageViewScreen extends StatefulWidget {
-  const new({super.key});
+  const PageViewScreen({super.key});
 
   @override
   State<PageViewScreen> createState() => _PageViewScreenState();
