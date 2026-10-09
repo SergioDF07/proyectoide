@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class RutaAbajoScreen extends StatelessWidget {
-  const new({super.key});
+  const RutaAbajoScreen({super.key});
 
   @override
   Widget build(BuildContext context) {

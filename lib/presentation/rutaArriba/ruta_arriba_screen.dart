@@ -7,7 +7,7 @@ final List<Widget> _screen = [
 ];
 
 class RutaArribaScreen extends StatefulWidget {
-  const new({super.key});
+  const RutaArribaScreen({super.key});
 
   @override
   State<RutaArribaScreen> createState() => _RutaArribaScreenState();

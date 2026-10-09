@@ -3,7 +3,7 @@ import 'package:proyectoide/presentation/rutaAbajo/ruta_abajo_screen.dart';
 import 'package:proyectoide/presentation/rutaArriba/ruta_arriba_screen.dart';
 
 class DrawerCustom extends StatelessWidget {
-  const new({super.key});
+  const DrawerCustom({super.key});
 
   @override
   Widget build(BuildContext context) {

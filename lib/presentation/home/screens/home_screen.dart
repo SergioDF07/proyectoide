@@ -8,7 +8,7 @@ import 'package:proyectoide/presentation/rutaArriba/ruta_arriba_screen.dart';
 import 'package:proyectoide/presentation/shared/drawer_custom.dart';
 
 class HomeScreen extends StatelessWidget {
-  const new ({super.key});
+  const HomeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {

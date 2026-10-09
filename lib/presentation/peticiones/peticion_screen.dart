@@ -3,7 +3,7 @@ import 'package:proyectoide/models/product_model.dart';
 import 'package:proyectoide/services/product_service.dart';
 
 class PeticionScreen extends StatelessWidget {
-  const new({super.key});
+  const PeticionScreen({super.key});
 
   @override
   Widget build(BuildContext context) {

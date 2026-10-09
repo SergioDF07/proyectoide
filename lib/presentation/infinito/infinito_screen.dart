@@ -3,7 +3,7 @@ import 'package:proyectoide/models/infinito_model.dart';
 import 'package:proyectoide/services/infinito_service.dart';
 
 class InfinitoScreen extends StatefulWidget {
-  const new({super.key});
+  const InfinitoScreen({super.key});
 
   @override
   State<InfinitoScreen> createState() => _InfinitoScreenState();
